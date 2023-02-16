@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navigation" class="navbar active">
+        <ul>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Search</a>
+        </ul>
+    </div>
+    
+    <script>
+        var div = document.getElementById("navigation");
+        console.log(div.className);
+        console.log(div.classList)
+        div.classList.add("nav")
+        div.classList.add("nav1", "nav2", "nav3")
+        console.log(div.className)
+        div.classList.remove("nav1")
+        div.classList.remove("navbar", "nav3")
+    </script>
+</body>
+</html>

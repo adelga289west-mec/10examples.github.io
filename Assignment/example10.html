@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="colors">
+        <h1 id="color">h1 tag</h1>
+    </div>
+    
+    <script>
+        var h1 = document.getElementById("color");
+        var parent = h1.parentNode;
+        var newp = document.createElement("p");
+        newp.setAttribute("id", "color");
+        newp.textContent = "new replacement element";
+        parent.replaceChild(newp, h1)
+    </script>
+</body>
+</html>

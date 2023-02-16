@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement</title>
+</head>
+<body>
+    <div id="parentElement">
+        <div id="childElement">Am a div</div>
+    </div>
+
+
+    <script>
+     
+        var parent = document.getElementById("parentElement");
+        var child = document.getElementById("childElement")
+        var h1 = document.createElement("h1");
+        h1.textContent = "My First Javascript Project";
+        parent.insertBefore(h1, child);
+        
+
+    </script>
+    
+</body>
+</html>
